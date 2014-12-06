@@ -1,0 +1,15 @@
+Insert into Region (codigo,nombre) values(1,'Tarapacá');
+Insert into Region (codigo,nombre) values(2,'Antofagasta');
+Insert into Region (codigo,nombre) values(3,'Atacama');
+Insert into Region (codigo,nombre) values(4,'Coquimbo');
+Insert into Region (codigo,nombre) values(5,'Valparaiso');
+Insert into Region (codigo,nombre) values(6,'Región del Libertador Gral. Bernardo O’Higgins');
+Insert into Region (codigo,nombre) values(7,'Región del Maule');
+Insert into Region (codigo,nombre) values(8,'Región del Biobío');
+Insert into Region (codigo,nombre) values(9,'Región de la Araucanía');
+Insert into Region (codigo,nombre) values(10,'Región de los Lagos');
+Insert into Region (codigo,nombre) values(11,'Región Aisén del Gral. Carlos Ibáñez del Campo');
+Insert into Region (codigo,nombre) values(12,'Región de Magallanes y de la Antártica Chilena');
+Insert into Region (codigo,nombre) values(13,'Región Metropolitana de Santiago');
+Insert into Region (codigo,nombre) values(14,'Región de Los Ríos');
+Insert into Region (codigo,nombre) values(15,'Región de Arica y Parinacota');
