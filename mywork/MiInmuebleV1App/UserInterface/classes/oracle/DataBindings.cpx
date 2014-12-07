@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.55.36" id="DataBindings" SeparateXMLFiles="false"
+             Package="oracle" ClientType="Generic">
+  <pageMap>
+    <page path="/principal.jspx" usageId="oracle_principalPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="oracle_principalPageDef" path="oracle.pageDefs.principalPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="HRFacadeLocal" path="oracle.HRFacadeLocal"/>
+  </dataControlUsages>
+</Application>

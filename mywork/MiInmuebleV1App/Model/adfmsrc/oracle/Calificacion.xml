@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.55.36"
+          id="Calificacion" Package="oracle" BeanClass="oracle.Calificacion"
+          isJavaBased="true">
+  <Attribute Name="articuloCodigo" PrimaryKey="true" Type="java.lang.Long"/>
+  <Attribute Name="calificacion" Type="java.lang.Float"/>
+  <Attribute Name="vendedorRut" PrimaryKey="true" Type="java.lang.String"/>
+  <AccessorAttribute id="articulo" IsCollection="false"
+                     BeanClass="oracle.Articulo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="vendedor" IsCollection="false"
+                     BeanClass="oracle.Vendedor"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.Calificacion"
+                     BeanClass="oracle.Calificacion" id="Calificacion">
+    <ParameterInfo id="articulo" Type="oracle.Articulo" isStructured="true"/>
+    <ParameterInfo id="calificacion" Type="java.lang.Float"
+                   isStructured="false"/>
+    <ParameterInfo id="vendedor" Type="oracle.Vendedor" isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.Calificacion"
+                     BeanClass="oracle.Calificacion" id="Calificacion"/>
+</JavaBean>

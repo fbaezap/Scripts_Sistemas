@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.55.36"
+          id="Inmobiliaria" Package="oracle" BeanClass="oracle.Inmobiliaria"
+          isJavaBased="true">
+  <Attribute Name="domicilioComercial" Type="java.lang.String"/>
+  <Attribute Name="domicilioLegal" Type="java.lang.String"/>
+  <Attribute Name="nombre" Type="java.lang.String"/>
+  <Attribute Name="paginaweb" Type="java.lang.String"/>
+  <Attribute Name="tipoSociedad" Type="java.lang.String"/>
+  <Attribute Name="vendedorRut" PrimaryKey="true" Type="java.lang.String"/>
+  <AccessorAttribute id="logo" IsCollection="true" Type="byte[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="byte"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="vendedor" IsCollection="false"
+                     BeanClass="oracle.Vendedor"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.Inmobiliaria"
+                     BeanClass="oracle.Inmobiliaria" id="Inmobiliaria">
+    <ParameterInfo id="domicilioComercial" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="domicilioLegal" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="nombre" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="paginaweb" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="tipoSociedad" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="vendedor" Type="oracle.Vendedor" isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.Inmobiliaria"
+                     BeanClass="oracle.Inmobiliaria" id="Inmobiliaria"/>
+</JavaBean>

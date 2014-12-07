@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.55.36"
+          id="Comentario" Package="oracle" BeanClass="oracle.Comentario"
+          isJavaBased="true">
+  <Attribute Name="codigo" PrimaryKey="true" Type="java.lang.Long"/>
+  <Attribute Name="fecha" Type="java.sql.Timestamp"/>
+  <Attribute Name="mensaje" Type="java.lang.String"/>
+  <AccessorAttribute id="vendedor" IsCollection="false"
+                     BeanClass="oracle.Vendedor"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="articulo" IsCollection="false"
+                     BeanClass="oracle.Articulo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.Comentario"
+                     BeanClass="oracle.Comentario" id="Comentario">
+    <ParameterInfo id="articulo" Type="oracle.Articulo" isStructured="true"/>
+    <ParameterInfo id="codigo" Type="java.lang.Long" isStructured="false"/>
+    <ParameterInfo id="fecha" Type="java.sql.Timestamp" isStructured="false"/>
+    <ParameterInfo id="mensaje" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="vendedor" Type="oracle.Vendedor" isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.Comentario"
+                     BeanClass="oracle.Comentario" id="Comentario"/>
+</JavaBean>

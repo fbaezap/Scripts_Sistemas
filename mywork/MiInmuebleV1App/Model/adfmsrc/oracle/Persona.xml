@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.55.36"
+          id="Persona" Package="oracle" BeanClass="oracle.Persona"
+          isJavaBased="true">
+  <Attribute Name="apellidos" Type="java.lang.String"/>
+  <Attribute Name="genero" Type="java.lang.String"/>
+  <Attribute Name="nombre" Type="java.lang.String"/>
+  <Attribute Name="vendedorRut" PrimaryKey="true" Type="java.lang.String"/>
+  <AccessorAttribute id="vendedor" IsCollection="false"
+                     BeanClass="oracle.Vendedor"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.Persona"
+                     BeanClass="oracle.Persona" id="Persona">
+    <ParameterInfo id="apellidos" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="genero" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="nombre" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="vendedor" Type="oracle.Vendedor" isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.Persona"
+                     BeanClass="oracle.Persona" id="Persona"/>
+</JavaBean>

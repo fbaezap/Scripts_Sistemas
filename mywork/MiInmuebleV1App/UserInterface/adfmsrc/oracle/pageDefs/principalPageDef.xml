@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.36" id="principalPageDef"
+                Package="oracle.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="HRFacadeLocal"
+              id="HRFacadeLocalIterator" ChangeEventPolicy="ppr"/>
+    <accessorIterator MasterBinding="HRFacadeLocalIterator"
+                      Binds="articuloFindAll" RangeSize="25"
+                      DataControl="HRFacadeLocal" BeanClass="oracle.Articulo"
+                      id="articuloFindAllIterator" ChangeEventPolicy="ppr"/>
+    <accessorIterator MasterBinding="articuloFindAllIterator" Binds="vendedor"
+                      RangeSize="25" DataControl="HRFacadeLocal"
+                      BeanClass="oracle.Vendedor" id="vendedorIterator"
+                      ChangeEventPolicy="ppr"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="articuloFindAllIterator" id="baños">
+      <AttrNames>
+        <Item Value="baños"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="vendedorIterator" id="usuario">
+      <AttrNames>
+        <Item Value="usuario"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>
