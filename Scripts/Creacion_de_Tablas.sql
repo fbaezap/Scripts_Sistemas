@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 3.1.4.710
---   en:        2014-12-08 15:31:03 ART
+--   en:        2014-12-08 16:01:22 ART
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -41,9 +41,9 @@ ALTER TABLE Fotos
 CREATE TABLE Membresia 
     ( 
      codigo NUMBER  NOT NULL , 
-     nombre NUMBER  NOT NULL , 
+     nombre VARCHAR2 (360)  NOT NULL , 
      nfotos NUMBER  NOT NULL , 
-     precio NUMBER  NOT NULL , 
+     precio FLOAT  NOT NULL , 
      ndestacados NUMBER  NOT NULL , 
      npublicaciones NUMBER  NOT NULL , 
      tipo VARCHAR2 (20) CHECK ( tipo IN ('Corredor', 'Inmobiliaria', 'Persona')) 
@@ -110,7 +110,7 @@ CREATE TABLE articulo
      ciudad VARCHAR2 (360) , 
      Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      comuna_codigo NUMBER  NOT NULL , 
-     calificacion NUMBER , 
+     calificacion NUMBER DEFAULT 0, 
      PaginaArticulo_pagina NUMBER 
     ) 
 ;

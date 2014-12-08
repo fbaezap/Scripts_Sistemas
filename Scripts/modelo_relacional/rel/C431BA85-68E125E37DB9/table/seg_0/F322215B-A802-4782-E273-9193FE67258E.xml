@@ -65,9 +65,8 @@
 <importedID>BD8696BA-532D-9888-9CE9-DFF89DEAC7F0</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>360</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>360</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="nfotos" id="BAFA3A4D-62CC-9224-2B65-AA5C6449A88D">
@@ -91,7 +90,7 @@
 <importedID>68C2EA40-2537-9F99-B2B4-4C7CAA60A77F</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT021</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ndestacados" id="56AD76F6-78F1-CA25-4614-946E2C4F0B23">
