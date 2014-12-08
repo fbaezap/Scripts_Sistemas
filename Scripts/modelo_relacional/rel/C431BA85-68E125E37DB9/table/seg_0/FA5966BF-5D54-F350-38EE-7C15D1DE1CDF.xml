@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="FA5966BF-5D54-F350-38EE-7C15D1DE1CDF" directorySegmentName="seg_0" name="conectado">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>6E70BEA5-F40D-4A7D-BCD1-0118FC58CAAF</importedID>
+<pkName>conectado_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Clave Primaria</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Clave Ajena</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Clave Única</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Vendedor_rut" id="2A514B36-F87F-299D-146A-D12F60D1AF15">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>2F9C9A15-0A9A-88DE-425E-56A277E0312B</importedID>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>360</dataTypeSize>
+<delegate>E5DA6D83-7591-0075-C4FD-B063B410B533</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED26E8CE-B077-37CC-F120-DFE402E67595" referredColumn="E5DA6D83-7591-0075-C4FD-B063B410B533"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ip" id="CAF39924-7357-5A81-121B-B7A36E88587D">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>3964CED8-59E1-F8EF-3646-0DE23CF15EBB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>360</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="horainicio" id="0F5EC432-D17A-BEC9-6DDD-04C33A6F70DE">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>A10861A0-8FD7-08CD-EFA5-3361FD93DFE6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="9C3AA491-13CF-316D-D67B-EF544EC55E66" name="conectado_PK">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>5D1D89AB-3D23-80A1-FC64-CC99EFD16123</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2A514B36-F87F-299D-146A-D12F60D1AF15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="2F90282E-EBEE-F67A-79E4-7B58A0A2D764" name="conectado_Vendedor_FK">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="2A514B36-F87F-299D-146A-D12F60D1AF15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

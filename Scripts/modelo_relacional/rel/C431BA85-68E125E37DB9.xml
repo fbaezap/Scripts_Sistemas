@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Creacion_de_Tablas" id="C431BA85-18E6-EC76-B3B8-68E125E37DB9" mainViewID="28B0D389-059E-0C84-1D27-0235E1E0FD0B">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>Creacion_de_Tablas.sql</fileName>
+<pathName>C:\Users\Francisco\Documents\GitHub\Scripts_Sistemas\Scripts</pathName>
+<dbType>10</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

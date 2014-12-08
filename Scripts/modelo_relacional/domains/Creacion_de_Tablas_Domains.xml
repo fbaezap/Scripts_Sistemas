@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Creacion_de_Tablas_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TIMESTAMP WITH LOCAL TIME ZONE_6_0_0" id="0E92B936-4A78-B7B1-9F40-877F78614762">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT047</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="2959AE64-B7F5-9FF6-1F52-8E2C25507A7E">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_360" id="35F6CB5E-6DB5-3A06-932F-C8AEC05F6111">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>360</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="5418653A-6CF7-9700-4580-199AACA00CA3">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_15" id="5B6CB3E2-B31B-A6E4-6E57-A7C54888941F">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>15</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="5C8F20BD-E10A-CF42-7318-5F1EB67B8638">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="6CB9BEE8-8050-62F7-8040-E6EE0ECD97D0">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BLOB_0_0_0" id="87835D78-BA08-AF6B-7BED-22D7E0C3D81B">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT029</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_0" id="8993C71A-3B1B-51EA-B368-7C32B985D58A">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="FLOAT_0_0_0" id="B383438B-7A40-8DED-D018-7B91591689D8">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT021</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="B843F8DA-24B6-DD06-714D-189871902523">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>30</dataTypeSize>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="C51D08D1-0CEA-7BB4-AD21-385CA1ABE537">
+         <createdBy>Francisco</createdBy>
+         <createdTime>2014-12-08 17:13:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo_relacional</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Creacion_de_Tablas_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="A9F09C72-34FD-8E32-DBDB-26960E5A6593" directorySegmentName="seg_0" name="corredor_empresacorredora_FK">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>8E1D0430-F0FB-CC89-64D3-920D029D3750</importedID>
+<containerWithKeyObject>F35002E5-AAE9-788C-2857-9D210F87725C</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>F4C84B32-8CB1-DDA5-2688-CF0CAA1EB31B</localFKIndex>
+<keyObject>10ACCC38-AAB8-94A8-73C5-CCA8A6D17B96</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

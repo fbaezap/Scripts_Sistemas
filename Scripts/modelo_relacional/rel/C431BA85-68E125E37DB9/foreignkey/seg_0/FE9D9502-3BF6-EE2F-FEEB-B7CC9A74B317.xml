@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="FE9D9502-3BF6-EE2F-FEEB-B7CC9A74B317" directorySegmentName="seg_0" name="provincia_region_FK">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>7255BE72-4574-D32F-F8C8-26E86E9DCFD5</importedID>
+<containerWithKeyObject>E3EDB291-61C0-5FE2-F495-724073E8C87A</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>D115D46F-2AB5-52AC-FE19-BD74737BA4AD</localFKIndex>
+<keyObject>F60BF8FD-B163-43A3-E602-0251C843A97F</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="5F11161B-E532-DB47-2F7D-62A93BE0216D" directorySegmentName="seg_0" name="inmobiliaria_Vendedor_FK">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>330D7D90-C96B-509B-5779-FEFA52AD214C</importedID>
+<containerWithKeyObject>DC1EEF58-D0FF-1AAF-BB8E-917C0E4FFC56</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>3D9B04FC-4C36-57C7-F0B3-5533DB22634A</localFKIndex>
+<keyObject>A46EF77D-5D71-6112-1CD3-BE3B23D59AD7</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

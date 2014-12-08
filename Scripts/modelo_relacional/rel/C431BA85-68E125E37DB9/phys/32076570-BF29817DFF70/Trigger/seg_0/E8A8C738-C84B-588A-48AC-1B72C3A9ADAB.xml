@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="region_codigo_TRG" id="E8A8C738-C84B-588A-48AC-1B72C3A9ADAB" directorySegmentName="seg_0">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN &lt;br&gt;    SELECT region_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; &lt;br&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<condition>NEW.codigo IS NULL</condition>
+<table>361A2741-60CF-02EA-1073-778D687BF304</table>
+</TriggerOraclev10g>

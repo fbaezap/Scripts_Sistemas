@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="5B75F6DC-C43B-8EF6-E67C-B41C637C361A" directorySegmentName="seg_0" name="calificacion_Vendedor_FK">
+<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<importedID>BF5257B9-1ECB-AB79-67E1-3834C9129B65</importedID>
+<containerWithKeyObject>15FC24AD-DC4A-145D-2503-E2210479450D</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>70CF0300-B22F-F0A0-FB75-E32B6F250929</localFKIndex>
+<keyObject>A46EF77D-5D71-6112-1CD3-BE3B23D59AD7</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

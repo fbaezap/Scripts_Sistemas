@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E3F63A09-0EEC-49DD-EA4E-59BA816AA192" name="Consulta" seqName="seg_0"/>
+   <object objectType="Table" objectID="6102D3B8-BE3D-3435-EE49-511155A34271" name="Fotos" seqName="seg_0"/>
+   <object objectType="Table" objectID="F322215B-A802-4782-E273-9193FE67258E" name="Membresia" seqName="seg_0"/>
+   <object objectType="Table" objectID="6F0CC85D-DE94-2019-0E1C-40CE0EC852EE" name="PaginaArticulo" seqName="seg_0"/>
+   <object objectType="Table" objectID="DDA771A8-76DF-FA11-7CC4-2FC8D56B3EAA" name="Vendedor" seqName="seg_0"/>
+   <object objectType="Table" objectID="3E9CBA55-4EB7-5F53-C6CD-A3E7BD7C10E7" name="articulo" seqName="seg_0"/>
+   <object objectType="Table" objectID="15FC24AD-DC4A-145D-2503-E2210479450D" name="calificacion" seqName="seg_0"/>
+   <object objectType="Table" objectID="74748B8A-D9B7-CF23-2718-0DE8368D5D8D" name="calificacionv" seqName="seg_0"/>
+   <object objectType="Table" objectID="6D14D3E3-8480-3315-CAF4-E20ACCA424B4" name="comentario" seqName="seg_0"/>
+   <object objectType="Table" objectID="15E16DF1-2E91-BAE2-F4AD-3492842BA32A" name="comuna" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA5966BF-5D54-F350-38EE-7C15D1DE1CDF" name="conectado" seqName="seg_0"/>
+   <object objectType="Table" objectID="F35002E5-AAE9-788C-2857-9D210F87725C" name="corredor" seqName="seg_0"/>
+   <object objectType="Table" objectID="1A1BA710-59E6-4FB8-6567-C370EBC032A6" name="empresacorredora" seqName="seg_0"/>
+   <object objectType="Table" objectID="DC1EEF58-D0FF-1AAF-BB8E-917C0E4FFC56" name="inmobiliaria" seqName="seg_0"/>
+   <object objectType="Table" objectID="9BBD932E-FD28-1FD1-080B-3EF46C7DFD3B" name="persona" seqName="seg_0"/>
+   <object objectType="Table" objectID="E3EDB291-61C0-5FE2-F495-724073E8C87A" name="provincia" seqName="seg_0"/>
+   <object objectType="Table" objectID="361A2741-60CF-02EA-1073-778D687BF304" name="region" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C58BB3E9-A638-589A-6D70-DF41DDE805C0" name="Consulta_articulo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="53B1E866-9252-7122-1F3E-4E2F3300D128" name="articulo_PaginaArticulo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="24892DD2-93EF-5BB8-A100-EA0B596B7749" name="Fotos_articulo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F20B53BD-984E-D313-4D84-CE3B4AB1F718" name="Vendedor_Membresia_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CEA19C8A-612C-1AC0-F233-0DA8503FDFD4" name="articulo_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BD714288-5CDF-4778-0BE7-3CA81275C379" name="articulo_comuna_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5B75F6DC-C43B-8EF6-E67C-B41C637C361A" name="calificacion_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="74432ADE-0390-468F-FD6F-7617022F1553" name="calificacion_articulo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="02378989-D9F6-F82D-71E8-E72CA63F8091" name="calificacionv_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0AC8EE58-FB82-F9F4-B2E5-D6E7075A09D2" name="calificacionv_Vendedor_FKv1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0BAF5854-6897-90DA-2487-CAEB9A167670" name="comentario_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="459D4AC3-2D6D-4EB9-08D3-C3BB0D86F81D" name="comentario_articulo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="45C2E780-2EB8-ADA6-C2DE-B989CDEFF264" name="comuna_provincia_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="ED26E8CE-B077-37CC-F120-DFE402E67595" name="conectado_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8343D14A-2309-DE0A-64DD-966FF90F5B92" name="corredor_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A9F09C72-34FD-8E32-DBDB-26960E5A6593" name="corredor_empresacorredora_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5F11161B-E532-DB47-2F7D-62A93BE0216D" name="inmobiliaria_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3120EB83-6990-EB09-E75D-C7D60A437868" name="persona_Vendedor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FE9D9502-3BF6-EE2F-FEEB-B7CC9A74B317" name="provincia_region_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

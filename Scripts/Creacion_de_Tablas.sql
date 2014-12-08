@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 3.1.4.710
---   en:        2014-12-05 16:03:09 ART
+--   en:        2014-12-08 15:31:03 ART
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -41,7 +41,7 @@ ALTER TABLE Fotos
 CREATE TABLE Membresia 
     ( 
      codigo NUMBER  NOT NULL , 
-     nombre VARCHAR2 (360)  NOT NULL , 
+     nombre NUMBER  NOT NULL , 
      nfotos NUMBER  NOT NULL , 
      precio NUMBER  NOT NULL , 
      ndestacados NUMBER  NOT NULL , 
@@ -57,9 +57,22 @@ ALTER TABLE Membresia
 
 
 
+CREATE TABLE PaginaArticulo 
+    ( 
+     pagina NUMBER  NOT NULL 
+    ) 
+;
+
+
+
+ALTER TABLE PaginaArticulo 
+    ADD CONSTRAINT PaginaArticulo_PK PRIMARY KEY ( pagina ) ;
+
+
+
 CREATE TABLE Vendedor 
     ( 
-     rut VARCHAR2 (30)  NOT NULL , 
+     rut VARCHAR2 (360)  NOT NULL , 
      usuario VARCHAR2 (360)  NOT NULL , 
      contraseña VARCHAR2 (360)  NOT NULL , 
      telefono VARCHAR2 (360) , 
@@ -85,18 +98,20 @@ CREATE TABLE articulo
      monto VARCHAR2 (360)  NOT NULL , 
      direccion VARCHAR2 (360)  NOT NULL , 
      codi_interno VARCHAR2 (360) , 
-     fecha DATE , 
+     fecha TIMESTAMP WITH LOCAL TIME ZONE , 
      superficie VARCHAR2 (360) , 
-     destacada CHAR (1) DEFAULT '0' CHECK ( destacada IN ('0', '1')) , 
+     destacada CHAR DEFAULT '0' CHECK ( destacada IN ('0', '1')) , 
      estructura VARCHAR2 (100)  NOT NULL CHECK ( estructura IN ('Casa', 'Departamento', 'Terreno')) , 
-     tipo CHAR (1) CHECK ( tipo IN ('A', 'V')) , 
+     tipo VARCHAR2 (10) CHECK ( tipo IN ('A', 'V')) , 
      piezas NUMBER DEFAULT 0 , 
      superficieconstruida NUMBER DEFAULT 0 , 
      baños NUMBER DEFAULT 0 , 
      pisos NUMBER DEFAULT 0 , 
      ciudad VARCHAR2 (360) , 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
-     comuna_codigo NUMBER  NOT NULL 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     comuna_codigo NUMBER  NOT NULL , 
+     calificacion NUMBER , 
+     PaginaArticulo_pagina NUMBER 
     ) 
 ;
 
@@ -110,7 +125,7 @@ ALTER TABLE articulo
 CREATE TABLE calificacion 
     ( 
      articulo_codigo NUMBER  NOT NULL , 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      calificacion FLOAT  NOT NULL CHECK ( calificacion BETWEEN 0 AND 5) 
     ) 
 ;
@@ -124,8 +139,8 @@ ALTER TABLE calificacion
 
 CREATE TABLE calificacionv 
     ( 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
-     Vendedor_rut1 VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut1 VARCHAR2 (360)  NOT NULL , 
      calificacion FLOAT  NOT NULL 
     ) 
 ;
@@ -143,7 +158,7 @@ CREATE TABLE comentario
      fecha TIMESTAMP WITH LOCAL TIME ZONE , 
      mensaje VARCHAR2 (360) , 
      articulo_codigo NUMBER  NOT NULL , 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL 
     ) 
 ;
 
@@ -171,8 +186,8 @@ ALTER TABLE comuna
 
 CREATE TABLE conectado 
     ( 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
-     ip VARCHAR2 (15) , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     ip VARCHAR2 (360) , 
      horainicio TIMESTAMP WITH LOCAL TIME ZONE 
     ) 
 ;
@@ -186,10 +201,10 @@ ALTER TABLE conectado
 
 CREATE TABLE corredor 
     ( 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      apellidos VARCHAR2 (360)  NOT NULL , 
-     genero CHAR  NOT NULL CHECK ( genero IN ('F', 'M')) , 
+     genero VARCHAR2 (10)  NOT NULL CHECK ( genero IN ('Femenino', 'Masculino')) , 
      empresacorredora_rut VARCHAR2 (360) 
     ) 
 ;
@@ -220,7 +235,7 @@ ALTER TABLE empresacorredora
 
 CREATE TABLE inmobiliaria 
     ( 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      logo BLOB , 
      paginaweb VARCHAR2 (360) , 
@@ -239,10 +254,10 @@ ALTER TABLE inmobiliaria
 
 CREATE TABLE persona 
     ( 
-     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      apellidos VARCHAR2 (360)  NOT NULL , 
-     genero CHAR  NOT NULL CHECK ( genero IN ('F', 'M')) 
+     genero VARCHAR2 (10)  NOT NULL CHECK ( genero IN ('Femenino', 'Masculino')) 
     ) 
 ;
 
@@ -316,6 +331,18 @@ ALTER TABLE Vendedor
     REFERENCES Membresia 
     ( 
      codigo
+    ) 
+;
+
+
+ALTER TABLE articulo 
+    ADD CONSTRAINT articulo_PaginaArticulo_FK FOREIGN KEY 
+    ( 
+     PaginaArticulo_pagina
+    ) 
+    REFERENCES PaginaArticulo 
+    ( 
+     pagina
     ) 
 ;
 
@@ -525,6 +552,19 @@ BEGIN
 END;
 /
 
+CREATE SEQUENCE Membresia_codigo_SEQ 
+    NOCACHE 
+    ORDER ;
+
+CREATE OR REPLACE TRIGGER Membresia_codigo_TRG 
+BEFORE INSERT ON Membresia 
+FOR EACH ROW 
+WHEN (NEW.codigo IS NULL) 
+BEGIN 
+    SELECT Membresia_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END;
+/
+
 CREATE SEQUENCE articulo_codigo_SEQ 
     NOCACHE 
     ORDER ;
@@ -551,58 +591,19 @@ BEGIN
 END;
 /
 
-CREATE SEQUENCE comuna_codigo_SEQ 
-    NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER comuna_codigo_TRG 
-BEFORE INSERT ON comuna 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT comuna_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
-
-CREATE SEQUENCE provincia_codigo_SEQ 
-    NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER provincia_codigo_TRG 
-BEFORE INSERT ON provincia 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT provincia_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
-
-CREATE SEQUENCE region_codigo_SEQ 
-    NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER region_codigo_TRG 
-BEFORE INSERT ON region 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT region_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
-
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            16
+-- CREATE TABLE                            17
 -- CREATE INDEX                             0
--- ALTER TABLE                             34
+-- ALTER TABLE                             36
 -- CREATE VIEW                              0
 -- CREATE PACKAGE                           0
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                           7
+-- CREATE TRIGGER                           5
 -- ALTER TRIGGER                            0
 -- CREATE STRUCTURED TYPE                   0
 -- CREATE COLLECTION TYPE                   0
@@ -614,7 +615,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          7
+-- CREATE SEQUENCE                          5
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0

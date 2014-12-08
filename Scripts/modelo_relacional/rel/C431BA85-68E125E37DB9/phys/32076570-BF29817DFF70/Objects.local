@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="15E16DF1-2E91-BAE2-F4AD-3492842BA32A" name="comuna" seqName="seg_0"/>
+   <object objectType="Table" objectID="15FC24AD-DC4A-145D-2503-E2210479450D" name="calificacion" seqName="seg_0"/>
+   <object objectType="Table" objectID="1A1BA710-59E6-4FB8-6567-C370EBC032A6" name="empresacorredora" seqName="seg_0"/>
+   <object objectType="Table" objectID="361A2741-60CF-02EA-1073-778D687BF304" name="region" seqName="seg_0"/>
+   <object objectType="Table" objectID="3E9CBA55-4EB7-5F53-C6CD-A3E7BD7C10E7" name="articulo" seqName="seg_0"/>
+   <object objectType="Table" objectID="6102D3B8-BE3D-3435-EE49-511155A34271" name="Fotos" seqName="seg_0"/>
+   <object objectType="Table" objectID="6D14D3E3-8480-3315-CAF4-E20ACCA424B4" name="comentario" seqName="seg_0"/>
+   <object objectType="Table" objectID="74748B8A-D9B7-CF23-2718-0DE8368D5D8D" name="calificacionv" seqName="seg_0"/>
+   <object objectType="Table" objectID="9BBD932E-FD28-1FD1-080B-3EF46C7DFD3B" name="persona" seqName="seg_0"/>
+   <object objectType="Table" objectID="DC1EEF58-D0FF-1AAF-BB8E-917C0E4FFC56" name="inmobiliaria" seqName="seg_0"/>
+   <object objectType="Table" objectID="DDA771A8-76DF-FA11-7CC4-2FC8D56B3EAA" name="Vendedor" seqName="seg_0"/>
+   <object objectType="Table" objectID="E3EDB291-61C0-5FE2-F495-724073E8C87A" name="provincia" seqName="seg_0"/>
+   <object objectType="Table" objectID="E3F63A09-0EEC-49DD-EA4E-59BA816AA192" name="Consulta" seqName="seg_0"/>
+   <object objectType="Table" objectID="F322215B-A802-4782-E273-9193FE67258E" name="Membresia" seqName="seg_0"/>
+   <object objectType="Table" objectID="F35002E5-AAE9-788C-2857-9D210F87725C" name="corredor" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA5966BF-5D54-F350-38EE-7C15D1DE1CDF" name="conectado" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="81D7720F-0EFB-DCFD-6485-4CD79B830FF0" name="Consulta_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="790A3C62-457E-F474-E0AE-E5DECBB57467" name="Fotos_id_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="8D078763-F9FD-8155-9BD9-2FEE51F8ACE1" name="articulo_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="B82EFE98-F3AD-959C-8619-6635ED925E36" name="comentario_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="9E1D453F-177F-8CB2-FA31-1AA89F921E0F" name="comuna_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="C4A1ACD1-AC45-E601-6944-04DDA5C95AC2" name="provincia_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Sequence" objectID="7E5F0BC2-6C11-A5CB-4E87-27AE0D90A3E7" name="region_codigo_SEQ" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="A73F1B11-CC64-6DEE-3607-E640DD32AFD3" name="Consulta_codigo_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="49F2EB12-197D-1BC8-FD7C-1A2EEF63B1C1" name="Fotos_id_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="5E7BCBA8-8DB9-0BA9-6D62-786B0DE200CC" name="articulo_codigo_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="B105D233-6FA1-27BD-427F-23495B28577F" name="comentario_codigo_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="F52F9654-AA44-CA97-3C91-9495040052E9" name="comuna_codigo_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="3AFCDED0-4416-6C62-65C1-5463C8124DCB" name="provincia_codigo_TRG" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="E8A8C738-C84B-588A-48AC-1B72C3A9ADAB" name="region_codigo_TRG" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
