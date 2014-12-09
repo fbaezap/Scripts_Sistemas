@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 3.1.4.710
---   en:        2014-12-08 16:33:18 ART
+--   en:        2014-12-08 16:01:22 ART
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -57,6 +57,19 @@ ALTER TABLE Membresia
 
 
 
+CREATE TABLE PaginaArticulo 
+    ( 
+     pagina NUMBER  NOT NULL 
+    ) 
+;
+
+
+
+ALTER TABLE PaginaArticulo 
+    ADD CONSTRAINT PaginaArticulo_PK PRIMARY KEY ( pagina ) ;
+
+
+
 CREATE TABLE Vendedor 
     ( 
      rut VARCHAR2 (360)  NOT NULL , 
@@ -97,7 +110,8 @@ CREATE TABLE articulo
      ciudad VARCHAR2 (360) , 
      Vendedor_rut VARCHAR2 (360)  NOT NULL , 
      comuna_codigo NUMBER  NOT NULL , 
-     calificacion NUMBER 
+     calificacion NUMBER DEFAULT 0, 
+     PaginaArticulo_pagina NUMBER 
     ) 
 ;
 
@@ -317,6 +331,18 @@ ALTER TABLE Vendedor
     REFERENCES Membresia 
     ( 
      codigo
+    ) 
+;
+
+
+ALTER TABLE articulo 
+    ADD CONSTRAINT articulo_PaginaArticulo_FK FOREIGN KEY 
+    ( 
+     PaginaArticulo_pagina
+    ) 
+    REFERENCES PaginaArticulo 
+    ( 
+     pagina
     ) 
 ;
 
@@ -569,9 +595,9 @@ END;
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            16
+-- CREATE TABLE                            17
 -- CREATE INDEX                             0
--- ALTER TABLE                             34
+-- ALTER TABLE                             36
 -- CREATE VIEW                              0
 -- CREATE PACKAGE                           0
 -- CREATE PACKAGE BODY                      0
