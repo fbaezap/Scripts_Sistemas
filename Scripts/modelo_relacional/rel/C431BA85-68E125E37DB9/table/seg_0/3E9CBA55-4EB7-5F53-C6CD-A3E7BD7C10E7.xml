@@ -315,22 +315,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="PaginaArticulo_pagina" id="27F249AB-7CCF-2AC9-0A25-AB7EC61E8C6E">
-<createdBy>Francisco</createdBy>
-<createdTime>2014-12-08 18:19:52 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<delegate>77C4FEF5-D1CA-F595-7B39-64298C3B77FC</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="53B1E866-9252-7122-1F3E-4E2F3300D128" referredColumn="77C4FEF5-D1CA-F595-7B39-64298C3B77FC"/>
-</associations>
-</Column>
 </columns>
 <indexes>
 <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7D840EF7-049A-3D84-9B14-662EF5FB1DE5" name="articulo_PK">
@@ -364,16 +348,6 @@
 <indexState>Foreign Key</indexState>
 <indexColumnUsage>
 <colUsage columnID="A61ADF7F-F5E0-E635-B8A3-73BBBCEEEA36"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4D8DE1F8-7993-AE5F-2881-F43C2148CD82" name="articulo_PaginaArticulo_FK">
-<createdBy>Francisco</createdBy>
-<createdTime>2014-12-08 18:19:52 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<indexColumnUsage>
-<colUsage columnID="27F249AB-7CCF-2AC9-0A25-AB7EC61E8C6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

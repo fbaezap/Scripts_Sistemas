@@ -1,0 +1,1854 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+  </ID>
+  <name>ARTICULO</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">836e226d-680d-4527-b541-6a923a6adbd5</identifier>
+      </ID>
+      <name>CODIGO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">e4f5ecf7-a03e-4377-80ce-af3172ef8b65</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CODIGO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CODIGO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">46355914-b3a1-4676-8032-f3393fbba35e</identifier>
+      </ID>
+      <name>TITULO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f9a052c0-342f-4b66-8afe-c74bd72a84fa</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>TITULO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TITULO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6976091b-c9a7-46ef-b84d-df44dab100ff</identifier>
+      </ID>
+      <name>DESCRIPCION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">58e93ef1-3bdf-40bb-8b1e-52f39cef281f</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DESCRIPCION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DESCRIPCION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2ad9c3aa-01aa-456f-857d-e0ab29de7628</identifier>
+      </ID>
+      <name>MONTO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">77f0814e-1b8f-4a9b-a5e3-79b70f2c20e8</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>MONTO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MONTO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2ed0ed7f-3ceb-4c77-8f50-63f352b85330</identifier>
+      </ID>
+      <name>DIRECCION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">9498b6f1-d9e3-45cd-9d57-2c1b54d00b67</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DIRECCION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DIRECCION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">51e8c506-73cc-4e09-b4ed-3f91b9aaaea1</identifier>
+      </ID>
+      <name>CODI_INTERNO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">005a6f9a-ad13-4304-9343-445df4f030f1</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CODI_INTERNO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CODI_INTERNO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">320aa4fd-4a93-4ecc-b58f-fa4c7b97c03c</identifier>
+      </ID>
+      <name>FECHA</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">1a63d32c-1afa-4f81-bac1-52d9a170615a</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+          <entry>
+            <key>time_zone</key>
+            <value class="java.lang.String">LOCAL TIME ZONE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>TIMESTAMP</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>FECHA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FECHA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">32c647ec-a75b-4517-913c-93f5fce04ae4</identifier>
+      </ID>
+      <name>SUPERFICIE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">83a6c609-6259-4111-b7cf-12935edda0b1</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SUPERFICIE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SUPERFICIE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">77967321-1cf0-4da5-a6c1-01227cdefb47</identifier>
+      </ID>
+      <name>DESTACADA</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ff012c62-a6ca-4b02-9a28-c56d35ff500e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">1</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DESTACADA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <default class="java.lang.String">&apos;0&apos;</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DESTACADA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0b806a6b-ee9c-4ea9-9c39-4dc48d143f3f</identifier>
+      </ID>
+      <name>ESTRUCTURA</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ca803926-864e-46a2-ad67-3610fc909e9e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">100</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ESTRUCTURA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ESTRUCTURA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">a2038969-f1dc-4d0e-bce7-3a7c37702969</identifier>
+      </ID>
+      <name>TIPO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">57b6af26-347a-4bb5-8e91-b471ed106695</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">10</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>TIPO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TIPO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">368fc7e1-12e3-408d-8db7-08cb229f9a51</identifier>
+      </ID>
+      <name>PIEZAS</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">7edacb00-d12b-4451-9ca1-c4d5187cbd83</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>PIEZAS</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PIEZAS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9461dbfa-1604-4945-9ee0-1a318af3f096</identifier>
+      </ID>
+      <name>SUPERFICIECONSTRUIDA</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">95b4da4e-5bc8-4706-9fb1-e4b740516861</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SUPERFICIECONSTRUIDA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SUPERFICIECONSTRUIDA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">281a6052-15e2-4844-8cd5-a699a9041bd4</identifier>
+      </ID>
+      <name>BAÑOS</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">d582d81f-634c-44dc-80e7-de2421566d8f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>BAÑOS</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>BAÑOS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">03696d50-0a53-44a1-9fad-4846f88e9cf6</identifier>
+      </ID>
+      <name>PISOS</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">09bcd351-3df5-46c8-85f9-d869cd3f7a37</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>PISOS</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PISOS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8051560d-a2a4-4f86-82ee-663622851744</identifier>
+      </ID>
+      <name>CIUDAD</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c5fe839a-6f49-47df-b11e-a5f0b90e7d73</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CIUDAD</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CIUDAD</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">3d5f2e2c-ce9d-4093-9121-e4dad88a2aaf</identifier>
+      </ID>
+      <name>VENDEDOR_RUT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">96eb0043-90b4-478b-841b-295a8108ece8</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">360</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>VENDEDOR_RUT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VENDEDOR_RUT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7a5b32ee-cd29-4b2d-8810-892dbe3dd070</identifier>
+      </ID>
+      <name>COMUNA_CODIGO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ac3eef5a-af00-4328-a785-0a93280490fd</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>COMUNA_CODIGO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>COMUNA_CODIGO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e9bcda25-4c3e-4e52-96d0-522c361cb5cc</identifier>
+      </ID>
+      <name>CALIFICACION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2987a5b1-316b-44e5-bef9-897aa1fd3212</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CALIFICACION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CALIFICACION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9e1ff099-0d5c-4cb6-9ad0-9c7dbc332fb5</identifier>
+      </ID>
+      <name>SYS_C0012251</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b905810b-caf5-4ddc-b812-2a8d544cd0b0</identifier>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.SetOperation">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">70503daf-9d07-41ed-ab96-dc9c82699ad0</identifier>
+            </ID>
+            <arguments>
+              <argument class="oracle.javatools.db.sql.ColumnUsage">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">32da2e07-03c2-48ab-9db1-d6f250bd5fa9</identifier>
+                </ID>
+                <objectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>DESTACADA</name>
+                  <identifier class="java.lang.String">77967321-1cf0-4da5-a6c1-01227cdefb47</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>ARTICULO</name>
+                    <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+                    <schemaName>FBAEZA</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>COLUMN</type>
+                </objectID>
+                <outerJoin>false</outerJoin>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012251</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+                <qualified>false</qualified>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">eae84290-6942-416c-9e7a-e2c37a67217a</identifier>
+                </ID>
+                <SQLText>&apos;0&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012251</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">06a01f4d-73aa-4351-b6c2-370aba0a2a54</identifier>
+                </ID>
+                <SQLText>&apos;1&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012251</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+            </arguments>
+            <operator>705</operator>
+            <properties>
+              <entry>
+                <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                <value class="oracle.javatools.db.ReferenceID">
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <name>SYS_C0012251</name>
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <name>ARTICULO</name>
+                        <identifier class="java.math.BigDecimal">22583</identifier>
+                        <schemaName>FBAEZA</schemaName>
+                        <type>TABLE</type>
+                      </parent>
+                      <subType>CheckConstraint</subType>
+                      <type>CONSTRAINT</type>
+                    </parent>
+                    <type>WHERE</type>
+                  </parent>
+                  <type>SQLFragment</type>
+                </value>
+              </entry>
+            </properties>
+          </argument>
+        </arguments>
+        <operator>372</operator>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SYS_C0012251</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <subType>CheckConstraint</subType>
+                <type>CONSTRAINT</type>
+              </parent>
+              <type>WHERE</type>
+            </value>
+          </entry>
+        </properties>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0012251</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>CheckConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">64e52aaf-de04-4594-9672-20e4eef74270</identifier>
+      </ID>
+      <name>SYS_C0012252</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">52d820f7-f85d-47d4-827b-56b3e262c20c</identifier>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.SetOperation">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">81749c9c-2536-4203-b970-d57b94266b71</identifier>
+            </ID>
+            <arguments>
+              <argument class="oracle.javatools.db.sql.ColumnUsage">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">325cd1ee-b171-407d-8a0b-e343de7ca530</identifier>
+                </ID>
+                <objectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>ESTRUCTURA</name>
+                  <identifier class="java.lang.String">0b806a6b-ee9c-4ea9-9c39-4dc48d143f3f</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>ARTICULO</name>
+                    <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+                    <schemaName>FBAEZA</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>COLUMN</type>
+                </objectID>
+                <outerJoin>false</outerJoin>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012252</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+                <qualified>false</qualified>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">a3bdaec5-feb0-4902-af51-396d6b5da80a</identifier>
+                </ID>
+                <SQLText>&apos;Casa&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012252</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">fc673a61-c522-4f1a-9bcb-b7021fa967d3</identifier>
+                </ID>
+                <SQLText>&apos;Departamento&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012252</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">74b0111d-dfb2-49f3-af6f-82327e638f80</identifier>
+                </ID>
+                <SQLText>&apos;Terreno&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012252</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+            </arguments>
+            <operator>705</operator>
+            <properties>
+              <entry>
+                <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                <value class="oracle.javatools.db.ReferenceID">
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <name>SYS_C0012252</name>
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <name>ARTICULO</name>
+                        <identifier class="java.math.BigDecimal">22583</identifier>
+                        <schemaName>FBAEZA</schemaName>
+                        <type>TABLE</type>
+                      </parent>
+                      <subType>CheckConstraint</subType>
+                      <type>CONSTRAINT</type>
+                    </parent>
+                    <type>WHERE</type>
+                  </parent>
+                  <type>SQLFragment</type>
+                </value>
+              </entry>
+            </properties>
+          </argument>
+        </arguments>
+        <operator>372</operator>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SYS_C0012252</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <subType>CheckConstraint</subType>
+                <type>CONSTRAINT</type>
+              </parent>
+              <type>WHERE</type>
+            </value>
+          </entry>
+        </properties>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0012252</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>CheckConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d2668cd0-d00f-4016-a898-057a5519ca18</identifier>
+      </ID>
+      <name>SYS_C0012253</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">6c341267-8f1b-4e09-b652-5a2a1ba66fec</identifier>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.SetOperation">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">726be2a6-1ffe-492d-9260-481d87bdeb20</identifier>
+            </ID>
+            <arguments>
+              <argument class="oracle.javatools.db.sql.ColumnUsage">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">149dbcc9-1489-4811-9efe-7f99cc365a88</identifier>
+                </ID>
+                <objectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>TIPO</name>
+                  <identifier class="java.lang.String">a2038969-f1dc-4d0e-bce7-3a7c37702969</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>ARTICULO</name>
+                    <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+                    <schemaName>FBAEZA</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>COLUMN</type>
+                </objectID>
+                <outerJoin>false</outerJoin>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012253</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+                <qualified>false</qualified>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">45b149e6-cb5d-47a2-b3f6-4387fe71fc49</identifier>
+                </ID>
+                <SQLText>&apos;A&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012253</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">2ecd87ca-5995-426d-ad74-9dbc714d7990</identifier>
+                </ID>
+                <SQLText>&apos;V&apos;</SQLText>
+                <properties>
+                  <entry>
+                    <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                    <value class="oracle.javatools.db.ReferenceID">
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <parent class="oracle.javatools.db.ReferenceID">
+                          <parent class="oracle.javatools.db.ReferenceID">
+                            <name>SYS_C0012253</name>
+                            <parent class="oracle.javatools.db.ReferenceID">
+                              <name>ARTICULO</name>
+                              <identifier class="java.math.BigDecimal">22583</identifier>
+                              <schemaName>FBAEZA</schemaName>
+                              <type>TABLE</type>
+                            </parent>
+                            <subType>CheckConstraint</subType>
+                            <type>CONSTRAINT</type>
+                          </parent>
+                          <type>WHERE</type>
+                        </parent>
+                        <type>SQLFragment</type>
+                      </parent>
+                      <type>SQLFragment</type>
+                    </value>
+                  </entry>
+                </properties>
+              </argument>
+            </arguments>
+            <operator>705</operator>
+            <properties>
+              <entry>
+                <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                <value class="oracle.javatools.db.ReferenceID">
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <name>SYS_C0012253</name>
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <name>ARTICULO</name>
+                        <identifier class="java.math.BigDecimal">22583</identifier>
+                        <schemaName>FBAEZA</schemaName>
+                        <type>TABLE</type>
+                      </parent>
+                      <subType>CheckConstraint</subType>
+                      <type>CONSTRAINT</type>
+                    </parent>
+                    <type>WHERE</type>
+                  </parent>
+                  <type>SQLFragment</type>
+                </value>
+              </entry>
+            </properties>
+          </argument>
+        </arguments>
+        <operator>372</operator>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SYS_C0012253</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ARTICULO</name>
+                  <identifier class="java.math.BigDecimal">22583</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <subType>CheckConstraint</subType>
+                <type>CONSTRAINT</type>
+              </parent>
+              <type>WHERE</type>
+            </value>
+          </entry>
+        </properties>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0012253</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>CheckConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">93b334ba-92b1-4765-ab16-31a310291134</identifier>
+      </ID>
+      <name>ARTICULO_COMUNA_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>COMUNA_CODIGO</name>
+          <identifier class="java.lang.String">7a5b32ee-cd29-4b2d-8810-892dbe3dd070</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ARTICULO</name>
+            <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+            <schemaName>FBAEZA</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FBAEZA</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ARTICULO_COMUNA_FK</name>
+            <childObjectNames>
+              <childObjectName>COMUNA_CODIGO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>COMUNA_PK</name>
+        <identifier class="java.lang.String">7038c25e-62bc-43de-93f1-276d4d1ce8aa</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>COMUNA</name>
+          <identifier class="java.lang.String">f6c7459f-e3cb-4059-9518-e3439e1a7276</identifier>
+          <schemaName>FBAEZA</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>FBAEZA</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d6f8a141-f7e2-4fc9-87c3-034ced8189da</identifier>
+      </ID>
+      <name>ARTICULO_VENDEDOR_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>VENDEDOR_RUT</name>
+          <identifier class="java.lang.String">3d5f2e2c-ce9d-4093-9121-e4dad88a2aaf</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ARTICULO</name>
+            <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+            <schemaName>FBAEZA</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FBAEZA</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ARTICULO_VENDEDOR_FK</name>
+            <childObjectNames>
+              <childObjectName>VENDEDOR_RUT</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>VENDEDOR_PK</name>
+        <identifier class="java.lang.String">f93457c6-a781-44fb-b4ed-92aa6d2924aa</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>VENDEDOR</name>
+          <identifier class="java.lang.String">cf2c791e-dcb2-4d4e-bcf4-92a47f859fbe</identifier>
+          <schemaName>FBAEZA</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>FBAEZA</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c54aa27d-83cf-4175-af68-38291c35480c</identifier>
+      </ID>
+      <name>ARTICULO_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>CODIGO</name>
+          <identifier class="java.lang.String">836e226d-680d-4527-b541-6a923a6adbd5</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ARTICULO</name>
+            <identifier class="java.lang.String">ecc8e556-35a3-4f21-897e-1c8a25308414</identifier>
+            <schemaName>FBAEZA</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FBAEZA</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ARTICULO_PK</name>
+            <childObjectNames>
+              <childObjectName>CODIGO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ARTICULO</name>
+              <identifier class="java.math.BigDecimal">22583</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>ARTICULO</name>
+        <identifier class="java.math.BigDecimal">22583</identifier>
+        <schemaName>FBAEZA</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">d83f35b7-aa94-4668-907d-912fd0c54fc0</identifier>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ARTICULO</name>
+                <identifier class="java.math.BigDecimal">22583</identifier>
+                <schemaName>FBAEZA</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>FBAEZA</name>
+  </schema>
+</table>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Cp1252" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+  <persistence-unit name="ModeloVistas">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/InmuebleDS</jta-data-source>
+    <class>oracle.entities.Articulo</class>
+    <class>oracle.entities.Calificacion</class>
+    <class>oracle.entities.Calificacionv</class>
+    <class>oracle.entities.Comentario</class>
+    <class>oracle.entities.Comuna</class>
+    <class>oracle.entities.Conectado</class>
+    <class>oracle.entities.Consulta</class>
+    <class>oracle.entities.Corredor</class>
+    <class>oracle.entities.Empresacorredora</class>
+    <class>oracle.entities.Fotos</class>
+    <class>oracle.entities.Inmobiliaria</class>
+    <class>oracle.entities.Membresia</class>
+    <class>oracle.entities.Persona</class>
+    <class>oracle.entities.Provincia</class>
+    <class>oracle.entities.Region</class>
+    <class>oracle.entities.Vendedor</class>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="javax.persistence.jtaDataSource"
+                value="java:/app/jdbc/jdbc/InmuebleDS"/>
+    </properties>
+  </persistence-unit>
+</persistence>
