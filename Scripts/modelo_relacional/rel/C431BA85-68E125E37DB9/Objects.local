@@ -3,7 +3,6 @@
    <object objectType="Table" objectID="E3F63A09-0EEC-49DD-EA4E-59BA816AA192" name="Consulta" seqName="seg_0"/>
    <object objectType="Table" objectID="6102D3B8-BE3D-3435-EE49-511155A34271" name="Fotos" seqName="seg_0"/>
    <object objectType="Table" objectID="F322215B-A802-4782-E273-9193FE67258E" name="Membresia" seqName="seg_0"/>
-   <object objectType="Table" objectID="6F0CC85D-DE94-2019-0E1C-40CE0EC852EE" name="PaginaArticulo" seqName="seg_0"/>
    <object objectType="Table" objectID="DDA771A8-76DF-FA11-7CC4-2FC8D56B3EAA" name="Vendedor" seqName="seg_0"/>
    <object objectType="Table" objectID="3E9CBA55-4EB7-5F53-C6CD-A3E7BD7C10E7" name="articulo" seqName="seg_0"/>
    <object objectType="Table" objectID="15FC24AD-DC4A-145D-2503-E2210479450D" name="calificacion" seqName="seg_0"/>
@@ -18,7 +17,6 @@
    <object objectType="Table" objectID="E3EDB291-61C0-5FE2-F495-724073E8C87A" name="provincia" seqName="seg_0"/>
    <object objectType="Table" objectID="361A2741-60CF-02EA-1073-778D687BF304" name="region" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="C58BB3E9-A638-589A-6D70-DF41DDE805C0" name="Consulta_articulo_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="53B1E866-9252-7122-1F3E-4E2F3300D128" name="articulo_PaginaArticulo_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="24892DD2-93EF-5BB8-A100-EA0B596B7749" name="Fotos_articulo_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="F20B53BD-984E-D313-4D84-CE3B4AB1F718" name="Vendedor_Membresia_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="CEA19C8A-612C-1AC0-F233-0DA8503FDFD4" name="articulo_Vendedor_FK" seqName="seg_0"/>

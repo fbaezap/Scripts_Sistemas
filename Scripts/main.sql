@@ -5,7 +5,6 @@
 @Disparador_Calificacion_Vendedor.sql
 @Procedimiento_Actualiza_Calificacion_Articulo.sql
 @Disparador_Calificacion_Articulo.sql
-@Paginas.sql
 @Regiones.sql
 @Provincias.sql
 @Membresias.sql
