@@ -1,0 +1,333 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">d9df8c00-6295-4097-abeb-3c81b0dfaa35</identifier>
+  </ID>
+  <name>CONECTADO</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1b53b14f-c284-4ca1-9876-2831d5d8a80d</identifier>
+      </ID>
+      <name>VENDEDOR_RUT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">d52c14dd-56e5-4f89-800c-d1b061342e52</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>VENDEDOR_RUT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>CONECTADO</name>
+                  <identifier class="java.math.BigDecimal">23274</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VENDEDOR_RUT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CONECTADO</name>
+              <identifier class="java.math.BigDecimal">23274</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2f80239b-a14b-4c4b-bd0b-6e7d5564026b</identifier>
+      </ID>
+      <name>IP</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f37062d2-386d-4514-8e75-fbff15bf93b5</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>IP</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>CONECTADO</name>
+                  <identifier class="java.math.BigDecimal">23274</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>IP</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CONECTADO</name>
+              <identifier class="java.math.BigDecimal">23274</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">4b76f338-6f6d-4758-b90b-1e356f44e82f</identifier>
+      </ID>
+      <name>HORAINICIO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">52f237f5-ea37-466c-b102-a0e23222ec49</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+          <entry>
+            <key>time_zone</key>
+            <value class="java.lang.String">LOCAL TIME ZONE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>TIMESTAMP</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>HORAINICIO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>CONECTADO</name>
+                  <identifier class="java.math.BigDecimal">23274</identifier>
+                  <schemaName>FBAEZA</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>HORAINICIO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CONECTADO</name>
+              <identifier class="java.math.BigDecimal">23274</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c5d4f5e6-9c42-4719-8108-ae480452a759</identifier>
+      </ID>
+      <name>CONECTADO_VENDEDOR_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>VENDEDOR_RUT</name>
+          <identifier class="java.lang.String">1b53b14f-c284-4ca1-9876-2831d5d8a80d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CONECTADO</name>
+            <identifier class="java.lang.String">d9df8c00-6295-4097-abeb-3c81b0dfaa35</identifier>
+            <schemaName>FBAEZA</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FBAEZA</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CONECTADO_VENDEDOR_FK</name>
+            <childObjectNames>
+              <childObjectName>VENDEDOR_RUT</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CONECTADO</name>
+              <identifier class="java.math.BigDecimal">23274</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>VENDEDOR_PK</name>
+        <identifier class="java.lang.String">f08a3ce9-6faf-4562-a705-941bb85e031f</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>VENDEDOR</name>
+          <identifier class="java.lang.String">93090742-8c4b-4af1-96df-f2cc8dd5bbcd</identifier>
+          <schemaName>FBAEZA</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>FBAEZA</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">45ccdd13-55f7-4c58-8462-1219f2609216</identifier>
+      </ID>
+      <name>CONECTADO_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>VENDEDOR_RUT</name>
+          <identifier class="java.lang.String">1b53b14f-c284-4ca1-9876-2831d5d8a80d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CONECTADO</name>
+            <identifier class="java.lang.String">d9df8c00-6295-4097-abeb-3c81b0dfaa35</identifier>
+            <schemaName>FBAEZA</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FBAEZA</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CONECTADO_PK</name>
+            <childObjectNames>
+              <childObjectName>VENDEDOR_RUT</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CONECTADO</name>
+              <identifier class="java.math.BigDecimal">23274</identifier>
+              <schemaName>FBAEZA</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>CONECTADO</name>
+        <identifier class="java.math.BigDecimal">23274</identifier>
+        <schemaName>FBAEZA</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a64183fc-a330-448d-b065-3536120a0826</identifier>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CONECTADO</name>
+                <identifier class="java.math.BigDecimal">23274</identifier>
+                <schemaName>FBAEZA</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>FBAEZA</name>
+  </schema>
+</table>

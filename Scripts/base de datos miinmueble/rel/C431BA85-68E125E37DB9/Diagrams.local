@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="28B0D389-059E-0C84-1D27-0235E1E0FD0B" name="Creacion_de_Tablas" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

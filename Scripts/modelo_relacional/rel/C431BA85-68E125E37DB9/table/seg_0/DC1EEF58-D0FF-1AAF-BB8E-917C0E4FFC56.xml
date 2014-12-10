@@ -4,7 +4,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>A00CB5BF-56C8-4180-F135-3257A62A6EF2</importedID>
 <pkName>inmobiliaria_PK</pkName>
 <fonts>
@@ -48,11 +48,11 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>B04837B0-F9FB-C51B-5E85-8BB90AD54D27</importedID>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<domain>B843F8DA-24B6-DD06-714D-189871902523</domain>
 <delegate>E5DA6D83-7591-0075-C4FD-B063B410B533</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -64,12 +64,11 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>F6129EC0-C27E-8E64-748A-89003B78695C</importedID>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<domain>35F6CB5E-6DB5-3A06-932F-C8AEC05F6111</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="logo" id="3B3E55FB-D87A-3A9B-6E0E-73309A6D5CFA">
@@ -77,12 +76,12 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>82F4F2EC-2BB1-B74E-511F-ED7C8F7FC0F4</importedID>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT029</logicalDatatype>
+<domain>87835D78-BA08-AF6B-7BED-22D7E0C3D81B</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="paginaweb" id="D8DF40DB-BAB7-3329-E2C0-8E287AC3158D">
@@ -90,13 +89,12 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>CC40BC85-71EE-158B-4078-2761DC4C7C56</importedID>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<domain>35F6CB5E-6DB5-3A06-932F-C8AEC05F6111</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="tipo_sociedad" id="4264613F-C226-AFFD-2C99-A2B34B49D948">
@@ -104,13 +102,12 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>E5E32BDE-2994-4862-2C4F-8EE8D14A9404</importedID>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<domain>35F6CB5E-6DB5-3A06-932F-C8AEC05F6111</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="domicilio_legal" id="D90F762D-1E89-CC30-B7E4-14FCF3B2D7F9">
@@ -118,13 +115,12 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>B027090E-64A0-E9C8-1D4C-C9917FD2B2FD</importedID>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<domain>35F6CB5E-6DB5-3A06-932F-C8AEC05F6111</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="domicilio_comercial" id="A42D40CD-AD25-832E-EC16-1D13311E3DBD">
@@ -132,14 +128,29 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>143C11B5-BBF6-730A-FCBF-2E39128721F7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35F6CB5E-6DB5-3A06-932F-C8AEC05F6111</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="PHOTOS_IMAGEID" id="4BE742A3-68E4-F243-465A-AE5FA0669324">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:43:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>360</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>FE41B5E8-EFE6-6471-3578-363F02F1673B</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A34BB07E-5EAD-51C2-FC99-CD185E6A4CE1" referredColumn="FE41B5E8-EFE6-6471-3578-363F02F1673B"/>
+</associations>
 </Column>
 </columns>
 <indexes>
@@ -148,7 +159,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>F3C1337B-70BD-CCF2-A1D9-2F58FF46B27C</importedID>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -160,10 +171,20 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <indexColumnUsage>
 <colUsage columnID="91236ED2-8CC6-4856-92E2-800AF201BD56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="A4A3693A-2629-2AB5-71C4-D8C700BCDBB6" name="inmobiliaria_PHOTOS_FK">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:43:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="4BE742A3-68E4-F243-465A-AE5FA0669324"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

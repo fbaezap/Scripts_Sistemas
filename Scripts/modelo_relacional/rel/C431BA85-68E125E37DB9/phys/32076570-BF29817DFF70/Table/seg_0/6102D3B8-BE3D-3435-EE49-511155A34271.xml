@@ -3,33 +3,39 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <columnProxies>
 <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="id" id="2134F06C-EF5B-4600-9CEE-081CD6675B72">
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="imagen" id="ABC9BC15-76A1-EE5B-52A0-C95B064FA45D">
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="PHOTOS_IMAGEID" id="E1F80593-BC56-0861-C617-ED737EDC850B">
 <createdBy>Francisco</createdBy>
-<createdTime>2014-12-08 17:13:44 UTC</createdTime>
+<createdTime>2014-12-10 02:42:21 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>Untitled_1</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="articulo_codigo" id="F59BD1FB-9DEF-7D74-C300-5E9D71033A2E">
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
 <foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Fotos_PHOTOS_FK" id="262ACAD2-A236-0EAA-6BD5-83F6DB5E5FE9">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:42:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>Untitled_1</ownerDesignName>
+</ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Fotos_articulo_FK" id="6FB01CDE-A77A-7AF5-9F89-D075A144FA4A">
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
@@ -37,7 +43,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>

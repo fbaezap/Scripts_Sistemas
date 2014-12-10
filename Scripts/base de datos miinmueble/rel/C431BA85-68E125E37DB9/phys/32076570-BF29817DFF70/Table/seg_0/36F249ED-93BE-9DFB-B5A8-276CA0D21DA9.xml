@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PHOTOS" id="36F249ED-93BE-9DFB-B5A8-276CA0D21DA9" directorySegmentName="seg_0">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:38:23 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+<logging>YES</logging>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="TYPE" id="3C22FFAF-065D-B2CA-D039-14A17881FA65">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:44:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="IMAGE" id="B2F5CA6A-927C-3458-77B5-3CDB9A26609A">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:40:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="IMAGEID" id="FE41B5E8-EFE6-6471-3578-363F02F1673B">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:40:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PHOTOS_PK" id="B9E343F5-8CB2-BA88-6D53-24E5F77617D4">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:40:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -4,7 +4,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>488C177F-C63C-A94F-A72E-703F9AA0D775</importedID>
 <pkName>Fotos_PK</pkName>
 <fonts>
@@ -48,7 +48,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>0E3F424D-7709-452A-F3CC-56345E4DD9B9</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,24 +56,12 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="imagen" id="ABC9BC15-76A1-EE5B-52A0-C95B064FA45D">
-<sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
-<createdBy>Francisco</createdBy>
-<createdTime>2014-12-08 17:13:44 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
-<importedID>7350C2A6-5C92-39F3-B2E0-67753CD3FDEC</importedID>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT029</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="articulo_codigo" id="F59BD1FB-9DEF-7D74-C300-5E9D71033A2E">
 <sourceDDLFile>Creacion_de_Tablas.sql</sourceDDLFile>
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>DF136EE6-69CC-0E90-BA37-BCE51286CA29</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,6 +72,21 @@
 <colAssociation fkAssociation="24892DD2-93EF-5BB8-A100-EA0B596B7749" referredColumn="0B8CDD10-C24B-74F9-E4FD-E87AC1252E50"/>
 </associations>
 </Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="PHOTOS_IMAGEID" id="E1F80593-BC56-0861-C617-ED737EDC850B">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:42:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>FE41B5E8-EFE6-6471-3578-363F02F1673B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01D08F24-3EF7-98F1-7675-176BDC221A9E" referredColumn="FE41B5E8-EFE6-6471-3578-363F02F1673B"/>
+</associations>
+</Column>
 </columns>
 <indexes>
 <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6A7AB2AB-0CD8-C442-2389-1DA965F7A2D6" name="Fotos_PK">
@@ -91,7 +94,7 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <importedID>4CA18799-0F51-F194-EA02-BC382AA476C6</importedID>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -103,10 +106,20 @@
 <createdBy>Francisco</createdBy>
 <createdTime>2014-12-08 17:13:44 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>modelo_relacional</ownerDesignName>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <indexColumnUsage>
 <colUsage columnID="F59BD1FB-9DEF-7D74-C300-5E9D71033A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="262ACAD2-A236-0EAA-6BD5-83F6DB5E5FE9" name="Fotos_PHOTOS_FK">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:42:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="E1F80593-BC56-0861-C617-ED737EDC850B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

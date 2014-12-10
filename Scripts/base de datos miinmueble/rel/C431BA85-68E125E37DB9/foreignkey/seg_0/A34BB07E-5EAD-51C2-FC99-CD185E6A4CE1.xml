@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="A34BB07E-5EAD-51C2-FC99-CD185E6A4CE1" directorySegmentName="seg_0" name="inmobiliaria_PHOTOS_FK">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:43:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>base de datos miinmueble</ownerDesignName>
+<containerWithKeyObject>DC1EEF58-D0FF-1AAF-BB8E-917C0E4FFC56</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>A4A3693A-2629-2AB5-71C4-D8C700BCDBB6</localFKIndex>
+<keyObject>B9E343F5-8CB2-BA88-6D53-24E5F77617D4</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

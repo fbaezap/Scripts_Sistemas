@@ -17,6 +17,7 @@
       <value n="oracle.mds.internal.dt.ide.migrator.MDSConfigMigratorHelper" v="11.1.1.0.5313"/>
    </hash>
    <list n="listOfChildren">
-      <hash><url n="URL" path="ModeloVistas/ModeloVistas.jpr"/></hash>
+      <hash><url n="URL" path="V2/V2.jpr"/></hash>
+      <hash><url n="URL" path="Vistas/Vistas.jpr"/></hash>
    </list>
 </jws:workspace>

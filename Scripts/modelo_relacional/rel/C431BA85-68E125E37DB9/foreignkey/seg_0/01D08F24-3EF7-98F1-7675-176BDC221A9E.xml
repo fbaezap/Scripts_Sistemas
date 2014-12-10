@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="01D08F24-3EF7-98F1-7675-176BDC221A9E" directorySegmentName="seg_0" name="Fotos_PHOTOS_FK">
+<createdBy>Francisco</createdBy>
+<createdTime>2014-12-10 02:42:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional</ownerDesignName>
+<containerWithKeyObject>6102D3B8-BE3D-3435-EE49-511155A34271</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>262ACAD2-A236-0EAA-6BD5-83F6DB5E5FE9</localFKIndex>
+<keyObject>B9E343F5-8CB2-BA88-6D53-24E5F77617D4</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

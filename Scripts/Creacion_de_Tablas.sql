@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 3.1.4.710
---   en:        2014-12-08 16:33:18 ART
+--   en:        2014-12-10 00:59:29 ART
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -26,8 +26,8 @@ ALTER TABLE Consulta
 CREATE TABLE Fotos 
     ( 
      id NUMBER  NOT NULL , 
-     imagen BLOB  NOT NULL , 
-     articulo_codigo NUMBER  NOT NULL 
+     articulo_codigo NUMBER  NOT NULL , 
+     PHOTOS_IMAGEID NUMBER  NOT NULL 
     ) 
 ;
 
@@ -43,10 +43,10 @@ CREATE TABLE Membresia
      codigo NUMBER  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      nfotos NUMBER  NOT NULL , 
-     precio FLOAT  NOT NULL , 
+     precio NUMBER  NOT NULL , 
      ndestacados NUMBER  NOT NULL , 
      npublicaciones NUMBER  NOT NULL , 
-     tipo VARCHAR2 (20) CHECK ( tipo IN ('Corredor', 'Inmobiliaria', 'Persona')) 
+     tipo VARCHAR2 (20)  NOT NULL CHECK ( tipo IN ('Corredor', 'Inmobiliaria', 'Persona')) 
     ) 
 ;
 
@@ -57,16 +57,32 @@ ALTER TABLE Membresia
 
 
 
+CREATE TABLE PHOTOS 
+    ( 
+     IMAGEID NUMBER  NOT NULL , 
+     IMAGE BLOB  NOT NULL , 
+     TYPE VARCHAR2 (5)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+ALTER TABLE PHOTOS 
+    ADD CONSTRAINT PHOTOS_PK PRIMARY KEY ( IMAGEID ) ;
+
+
+
 CREATE TABLE Vendedor 
     ( 
-     rut VARCHAR2 (360)  NOT NULL , 
+     rut VARCHAR2 (30)  NOT NULL , 
      usuario VARCHAR2 (360)  NOT NULL , 
      contraseña VARCHAR2 (360)  NOT NULL , 
      telefono VARCHAR2 (360) , 
      tipo VARCHAR2 (20)  NOT NULL CHECK ( tipo IN ('Corredor', 'Inmobiliaria', 'Persona')) , 
      correo VARCHAR2 (360)  NOT NULL , 
      Membresia_codigo NUMBER  NOT NULL , 
-     calificacion FLOAT 
+     calificacion FLOAT DEFAULT 0 
     ) 
 ;
 
@@ -87,17 +103,17 @@ CREATE TABLE articulo
      codi_interno VARCHAR2 (360) , 
      fecha TIMESTAMP WITH LOCAL TIME ZONE , 
      superficie VARCHAR2 (360) , 
-     destacada CHAR DEFAULT '0' CHECK ( destacada IN ('0', '1')) , 
+     destacada CHAR (1) DEFAULT '0' CHECK ( destacada IN ('0', '1')) , 
      estructura VARCHAR2 (100)  NOT NULL CHECK ( estructura IN ('Casa', 'Departamento', 'Terreno')) , 
-     tipo VARCHAR2 (10) CHECK ( tipo IN ('A', 'V')) , 
+     tipo VARCHAR2 (10)  NOT NULL CHECK ( tipo IN ('Arriendo', 'Venta')) , 
      piezas NUMBER DEFAULT 0 , 
      superficieconstruida NUMBER DEFAULT 0 , 
      baños NUMBER DEFAULT 0 , 
      pisos NUMBER DEFAULT 0 , 
      ciudad VARCHAR2 (360) , 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
-     comuna_codigo NUMBER  NOT NULL , 
-     calificacion NUMBER 
+     calificacion FLOAT DEFAULT 0 , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     comuna_codigo NUMBER  NOT NULL 
     ) 
 ;
 
@@ -111,7 +127,7 @@ ALTER TABLE articulo
 CREATE TABLE calificacion 
     ( 
      articulo_codigo NUMBER  NOT NULL , 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
      calificacion FLOAT  NOT NULL CHECK ( calificacion BETWEEN 0 AND 5) 
     ) 
 ;
@@ -125,8 +141,8 @@ ALTER TABLE calificacion
 
 CREATE TABLE calificacionv 
     ( 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
-     Vendedor_rut1 VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     Vendedor_rut1 VARCHAR2 (30)  NOT NULL , 
      calificacion FLOAT  NOT NULL 
     ) 
 ;
@@ -141,10 +157,10 @@ ALTER TABLE calificacionv
 CREATE TABLE comentario 
     ( 
      codigo NUMBER  NOT NULL , 
-     fecha TIMESTAMP WITH LOCAL TIME ZONE , 
-     mensaje VARCHAR2 (360) , 
+     fecha TIMESTAMP WITH LOCAL TIME ZONE  NOT NULL , 
+     mensaje VARCHAR2 (360)  NOT NULL , 
      articulo_codigo NUMBER  NOT NULL , 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL 
     ) 
 ;
 
@@ -172,8 +188,8 @@ ALTER TABLE comuna
 
 CREATE TABLE conectado 
     ( 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
-     ip VARCHAR2 (360) , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
+     ip VARCHAR2 (15) , 
      horainicio TIMESTAMP WITH LOCAL TIME ZONE 
     ) 
 ;
@@ -187,7 +203,7 @@ ALTER TABLE conectado
 
 CREATE TABLE corredor 
     ( 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      apellidos VARCHAR2 (360)  NOT NULL , 
      genero VARCHAR2 (10)  NOT NULL CHECK ( genero IN ('Femenino', 'Masculino')) , 
@@ -206,9 +222,9 @@ CREATE TABLE empresacorredora
     ( 
      rut VARCHAR2 (360)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
-     logo BLOB , 
-     paginaweb VARCHAR2 (360) , 
-     correo VARCHAR2 (360) 
+     paginaweb VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     correo VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     PHOTOS_IMAGEID NUMBER 
     ) 
 ;
 
@@ -221,13 +237,13 @@ ALTER TABLE empresacorredora
 
 CREATE TABLE inmobiliaria 
     ( 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
-     logo BLOB , 
-     paginaweb VARCHAR2 (360) , 
-     tipo_sociedad VARCHAR2 (360) , 
-     domicilio_legal VARCHAR2 (360) , 
-     domicilio_comercial VARCHAR2 (360) 
+     paginaweb VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     tipo_sociedad VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     domicilio_legal VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     domicilio_comercial VARCHAR2 (360) DEFAULT 'Sin Definir' , 
+     PHOTOS_IMAGEID NUMBER 
     ) 
 ;
 
@@ -240,7 +256,7 @@ ALTER TABLE inmobiliaria
 
 CREATE TABLE persona 
     ( 
-     Vendedor_rut VARCHAR2 (360)  NOT NULL , 
+     Vendedor_rut VARCHAR2 (30)  NOT NULL , 
      nombre VARCHAR2 (360)  NOT NULL , 
      apellidos VARCHAR2 (360)  NOT NULL , 
      genero VARCHAR2 (10)  NOT NULL CHECK ( genero IN ('Femenino', 'Masculino')) 
@@ -294,6 +310,20 @@ ALTER TABLE Consulta
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE Fotos 
+    ADD CONSTRAINT Fotos_PHOTOS_FK FOREIGN KEY 
+    ( 
+     PHOTOS_IMAGEID
+    ) 
+    REFERENCES PHOTOS 
+    ( 
+     IMAGEID
+    ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -306,6 +336,7 @@ ALTER TABLE Fotos
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -318,6 +349,7 @@ ALTER TABLE Vendedor
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -330,6 +362,7 @@ ALTER TABLE articulo
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -342,6 +375,7 @@ ALTER TABLE articulo
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -354,6 +388,7 @@ ALTER TABLE calificacion
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -366,6 +401,7 @@ ALTER TABLE calificacion
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -378,6 +414,7 @@ ALTER TABLE calificacionv
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -390,6 +427,7 @@ ALTER TABLE calificacionv
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -402,6 +440,7 @@ ALTER TABLE comentario
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -414,6 +453,7 @@ ALTER TABLE comentario
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -426,6 +466,7 @@ ALTER TABLE comuna
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -438,6 +479,7 @@ ALTER TABLE conectado
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -450,6 +492,7 @@ ALTER TABLE corredor
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -462,6 +505,33 @@ ALTER TABLE corredor
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE empresacorredora 
+    ADD CONSTRAINT empresacorredora_PHOTOS_FK FOREIGN KEY 
+    ( 
+     PHOTOS_IMAGEID
+    ) 
+    REFERENCES PHOTOS 
+    ( 
+     IMAGEID
+    ) 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE inmobiliaria 
+    ADD CONSTRAINT inmobiliaria_PHOTOS_FK FOREIGN KEY 
+    ( 
+     PHOTOS_IMAGEID
+    ) 
+    REFERENCES PHOTOS 
+    ( 
+     IMAGEID
+    ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -474,6 +544,7 @@ ALTER TABLE inmobiliaria
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -486,6 +557,7 @@ ALTER TABLE persona
     ( 
      rut
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -498,70 +570,124 @@ ALTER TABLE provincia
     ( 
      codigo
     ) 
+    NOT DEFERRABLE 
 ;
 
 CREATE SEQUENCE Consulta_codigo_SEQ 
     NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER Consulta_codigo_TRG 
-BEFORE INSERT ON Consulta 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT Consulta_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
+    ORDER 
+;
 
 CREATE SEQUENCE Fotos_id_SEQ 
     NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER Fotos_id_TRG 
-BEFORE INSERT ON Fotos 
-FOR EACH ROW 
-WHEN (NEW.id IS NULL) 
-BEGIN 
-    SELECT Fotos_id_SEQ.NEXTVAL INTO :NEW.id FROM DUAL; 
-END;
-/
-
-CREATE SEQUENCE Membresia_codigo_SEQ 
-    NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER Membresia_codigo_TRG 
-BEFORE INSERT ON Membresia 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT Membresia_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
+    ORDER 
+;
 
 CREATE SEQUENCE articulo_codigo_SEQ 
     NOCACHE 
-    ORDER ;
-
-CREATE OR REPLACE TRIGGER articulo_codigo_TRG 
-BEFORE INSERT ON articulo 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
-BEGIN 
-    SELECT articulo_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
-END;
-/
+    ORDER 
+;
 
 CREATE SEQUENCE comentario_codigo_SEQ 
     NOCACHE 
-    ORDER ;
+    ORDER 
+;
+
+CREATE SEQUENCE comuna_codigo_SEQ 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE SEQUENCE provincia_codigo_SEQ 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE SEQUENCE region_codigo_SEQ 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE OR REPLACE TRIGGER Consulta_codigo_TRG 
+    BEFORE INSERT ON Consulta 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
+BEGIN 
+    SELECT Consulta_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
+
+CREATE OR REPLACE TRIGGER Fotos_id_TRG 
+    BEFORE INSERT ON Fotos 
+    FOR EACH ROW 
+    WHEN ( NEW.id IS NULL ) 
+BEGIN 
+    SELECT Fotos_id_SEQ.NEXTVAL INTO :NEW.id FROM DUAL; 
+END; 
+/
+
+
+CREATE OR REPLACE TRIGGER articulo_codigo_TRG 
+    BEFORE INSERT ON articulo 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
+BEGIN 
+    SELECT articulo_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
 
 CREATE OR REPLACE TRIGGER comentario_codigo_TRG 
-BEFORE INSERT ON comentario 
-FOR EACH ROW 
-WHEN (NEW.codigo IS NULL) 
+    BEFORE INSERT ON comentario 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
 BEGIN 
     SELECT comentario_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
+
+CREATE OR REPLACE TRIGGER comuna_codigo_TRG 
+    BEFORE INSERT ON comuna 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
+BEGIN 
+    SELECT comuna_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
+
+CREATE OR REPLACE TRIGGER provincia_codigo_TRG 
+    BEFORE INSERT ON provincia 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
+BEGIN 
+    SELECT provincia_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
+
+CREATE OR REPLACE TRIGGER region_codigo_TRG 
+    BEFORE INSERT ON region 
+    FOR EACH ROW 
+    WHEN ( NEW.codigo IS NULL ) 
+BEGIN 
+    SELECT region_codigo_SEQ.NEXTVAL INTO :NEW.codigo FROM DUAL; 
+END; 
+/
+
+
+CREATE SEQUENCE PHOTOS_IMAGEID_SEQ 
+    NOCACHE 
+    ORDER ;
+
+CREATE OR REPLACE TRIGGER PHOTOS_IMAGEID_TRG 
+BEFORE INSERT ON PHOTOS 
+FOR EACH ROW 
+WHEN (NEW.IMAGEID IS NULL) 
+BEGIN 
+    SELECT PHOTOS_IMAGEID_SEQ.NEXTVAL INTO :NEW.IMAGEID FROM DUAL; 
 END;
 /
 
@@ -569,15 +695,15 @@ END;
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            16
+-- CREATE TABLE                            17
 -- CREATE INDEX                             0
--- ALTER TABLE                             34
+-- ALTER TABLE                             38
 -- CREATE VIEW                              0
 -- CREATE PACKAGE                           0
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                           5
+-- CREATE TRIGGER                           8
 -- ALTER TRIGGER                            0
 -- CREATE STRUCTURED TYPE                   0
 -- CREATE COLLECTION TYPE                   0
@@ -589,7 +715,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          5
+-- CREATE SEQUENCE                          8
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0
