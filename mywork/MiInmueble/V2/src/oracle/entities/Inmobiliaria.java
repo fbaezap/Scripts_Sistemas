@@ -13,6 +13,8 @@ import javax.persistence.NamedQuery;
 @Entity
 @NamedQueries({
   @NamedQuery(name = "Inmobiliaria.findAll", query = "select o from Inmobiliaria o")
+    ,
+  @NamedQuery(name = "Inmobiliaria.findRut", query = "select o from Inmobiliaria o where o.vendedorRut = :p_rut")
 })
 public class Inmobiliaria implements Serializable {
     @Column(name="DOMICILIO_COMERCIAL", length = 360)

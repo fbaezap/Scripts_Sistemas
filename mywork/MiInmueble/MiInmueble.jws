@@ -18,6 +18,5 @@
    </hash>
    <list n="listOfChildren">
       <hash><url n="URL" path="V2/V2.jpr"/></hash>
-      <hash><url n="URL" path="Vistas/Vistas.jpr"/></hash>
    </list>
 </jws:workspace>

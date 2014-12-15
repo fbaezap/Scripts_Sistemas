@@ -38,7 +38,7 @@ Insert into comuna values (10208, 'Quellón', 102);
 Insert into comuna values (10209, 'Quemchi', 102);
 Insert into comuna values (10219, 'Quinchao', 102);
 
-Insert into provincia values (103, 'Chiloé', 10);
+Insert into provincia values (103, 'Osorno', 10);
 Insert into comuna values (10301, 'Osorno', 103);
 Insert into comuna values (10302, 'Puerto Octay', 103);
 Insert into comuna values (10303, 'Purranque', 103);

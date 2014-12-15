@@ -1,0 +1,87 @@
+
+.articulos{
+	
+	float: left;
+	margin: 3px 2%;
+	position: relative;
+	padding-top: 2px;
+	
+border: 1px solid #CCC;
+ }
+
+
+.mejor{
+	border: 1px solid #CCC;
+
+}
+.seccion1{
+	
+	margin-right: 300px;
+}
+#pro{
+
+	padding: 100px 0px;
+}
+#acceder{
+
+    color: #FFF;
+    background-color: #303030;
+    border-color: #2659B6;
+    margin-bottom: 0px;
+	font-weight: normal;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	
+	font-size: 14px;
+	line-height: 1.28571;
+	border-radius: 2px;
+}
+form{
+	padding: 20px 1200px;
+}
+img{	
+	width: 150px;
+	height: 100px;
+}
+#titulo{
+	color:#0000FF;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px 0px 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#precio{
+	color: #900;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.destacado{
+	padding: 30px 50px;
+	
+}
+
+.todos{
+
+	padding: 20px 50px;
+}
+ul li {
+	list-style:none;
+}
+.propaganda{
+	padding: 100px 0px;
+	float: left;
+  	width: 80px;
+  	
+}
+.principal{
+  float: left;
+  width: 1000px;
+
+}
+#contenedor{
+	border: 1px solid #CCC;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}

@@ -11,7 +11,7 @@ CREATE OR REPLACE PROCEDURE Display_Image(p_id NUMBER) IS
     FROM   PHOTOS
     WHERE  IMAGEID = p_id;
 
-    owa_util.mime_header('images/gif'); 
+    owa_util.mime_header('images/jpg'); 
     BEGIN
       LOOP
         -- Read the BLOB
