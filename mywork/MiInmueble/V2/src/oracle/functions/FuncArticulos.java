@@ -18,12 +18,7 @@ public class FuncArticulos {
     }
     public static boolean esMiArticulo(String user,String artiId) throws ClassNotFoundException,
                                                              SQLException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
         
         String query="select * from articulo where vendedor_rut = ? and codigo = ?"; 
         PreparedStatement st = conn.prepareStatement(query);
@@ -40,13 +35,7 @@ public class FuncArticulos {
     }
     public static void editaArticulo(List<String> campo, List<String> valor, String artiId) throws ClassNotFoundException,
                                                            SQLException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
-        
+        Connection conn = ConectarBD.getConnection();
         String query="update articulo set ";
         for(int i =1;i<valor.size();i++){
             query+=campo.get(i)+"='"+valor.get(i)+"', ";
@@ -61,12 +50,7 @@ public class FuncArticulos {
     }
     public static List<List<String>> findArticulos(List<CampoValor> campovalor, List<String> mostrar,boolean sindetalle) throws SQLException,
                                                                               ClassNotFoundException {        
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
         
         List<List<String>> salidaf = new ArrayList<List<String>>();
         List<String> salida;
@@ -112,13 +96,7 @@ public class FuncArticulos {
     }
     public static String muestraImagen(String imagenid) throws SQLException,
                                                             ClassNotFoundException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
-        
+        Connection conn = ConectarBD.getConnection();
         Out out = new Out();
         String query3="select * from Photos where imageid=?"; 
         PreparedStatement st3 = conn.prepareStatement(query3);

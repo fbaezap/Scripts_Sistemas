@@ -21,12 +21,8 @@ public class FuncVendedor {
         
         List<List<String>> salidas = new ArrayList<List<String>>();
         List<String> salida = new ArrayList<String>();
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        
+        Connection conn = ConectarBD.getConnection();
         
         String query="select * from vendedor where rut = ? "; 
         PreparedStatement st = conn.prepareStatement(query);
@@ -175,12 +171,7 @@ public class FuncVendedor {
     }
     public static String muestraImagen(String imagenid) throws SQLException,
                                                             ClassNotFoundException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
         
         Out out = new Out();
         String query3="select * from Photos where imageid=?"; 

@@ -36,10 +36,39 @@ border: 1px solid #CCC;
 	line-height: 1.28571;
 	border-radius: 2px;
 }
+#miperfil{
+    color: #FFF;
+    background-color: #303030;
+    border-color: #2659B6;
+    margin-bottom: 0px;
+	font-weight: normal;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	
+	font-size: 14px;
+	line-height: 1.28571;
+}
+#cerrarsesion{
+    color: #FFF;
+    background-color: #303030;
+    border-color: #2659B6;
+    margin-bottom: 0px;
+	font-weight: normal;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	
+	font-size: 14px;
+	line-height: 1.28571;
+}
+#form_region{
+	padding: 30px 50px;
+}
 form{
 	padding: 20px 1200px;
 }
-img{	
+img{
+	
+
 	width: 150px;
 	height: 100px;
 }

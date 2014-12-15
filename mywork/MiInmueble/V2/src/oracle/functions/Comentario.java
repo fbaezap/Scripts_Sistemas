@@ -18,12 +18,7 @@ public class Comentario {
     }
     public static void addComentario(String artiId, String user, String mensaje) throws ClassNotFoundException,
                                                             SQLException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
         String query3="select * from vendedor where rut=?"; 
         PreparedStatement st3 = conn.prepareStatement(query3);
         ResultSet rs3;        

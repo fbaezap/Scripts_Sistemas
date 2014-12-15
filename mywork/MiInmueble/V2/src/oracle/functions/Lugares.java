@@ -19,12 +19,7 @@ public class Lugares {
     public static List<String[]> getRegiones(){
         List<String[]> regiones = new ArrayList<String[]>();
         try{
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+            Connection conn = ConectarBD.getConnection();
                 
             String query="select * from region"; 
             PreparedStatement st = conn.prepareStatement(query);
@@ -51,12 +46,7 @@ public class Lugares {
     public static List<String[]> getProvincias(String cod_region){
         List<String[]> provincias = new ArrayList<String[]>();
         try{
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+            Connection conn = ConectarBD.getConnection();
                 
             String query="select * from provincia where region_codigo = ?"; 
             PreparedStatement st = conn.prepareStatement(query);
@@ -88,15 +78,7 @@ public class Lugares {
     public static List<String[]> getComunas(String cod_provincia,String cod_region){
         List<String[]> comunas = new ArrayList<String[]>();
         try{
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
-            
-            
-            System.out.println("Conetado");    
+            Connection conn = ConectarBD.getConnection();
             
             String query;
             PreparedStatement st;
@@ -207,7 +189,6 @@ public class Lugares {
                 text+="selected=\"selected\" ";
             }
             text+="value=\""+sal[0]+"\">"+sal[1]+"</option>";
-            System.out.println(text);
             retorno[0]+=text;
             text = "";
         }
@@ -219,7 +200,6 @@ public class Lugares {
                 text+="selected=\"selected\" ";
             }
             text+="value=\""+sal[0]+"\">"+sal[1]+"</option>";
-            System.out.println(text);
             retorno[1]+=text;
             text = "";
         }
@@ -231,7 +211,6 @@ public class Lugares {
                 text+="selected=\"selected\" ";
             }
             text+="value=\""+sal[0]+"\">"+sal[1]+"</option>";
-            System.out.println(text);
             retorno[2]+=text;
             text = "";
         }
@@ -280,12 +259,7 @@ public class Lugares {
     public static String getNombre(String tabla, String codigo) throws ClassNotFoundException,
                                                             SQLException {
         
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
                 
             String query="select * from "+tabla+" where codigo = ?"; 
             PreparedStatement st = conn.prepareStatement(query);

@@ -140,7 +140,7 @@
                 %>
             </select>
             <%String ciudad = request.getParameter("ciudad");
-            if(ciudad==null){
+            if(ciudad==null ||ciudad.equalsIgnoreCase("")){
                 out.print("<input type=\"text\" id=\"ciudad\" name=\"ciudad\" placeholder=\"Ingrese Ciudad\" />");
             }else {
                 out.print("<input type=\"text\" id=\"ciudad\" name=\"ciudad\" value=\""+ciudad+"\" />");

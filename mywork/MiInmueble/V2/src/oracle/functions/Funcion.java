@@ -23,12 +23,8 @@ public class Funcion {
     
     public Funcion() {
         try{
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            conexion = DriverManager.getConnection(cadenaConexion, usuario, password);        
+            
+            conexion = ConectarBD.getConnection();
         }catch(Exception e){
             e.printStackTrace();    
         }
@@ -60,6 +56,7 @@ public class Funcion {
         List<String> mostrar = new ArrayList<String>();
         mostrar.add("titulo");
         mostrar.add("tipo");
+        mostrar.add("monto");        
         mostrar.add("calificacion");
         return findArticulos(campovalor,mostrar);
     }
@@ -102,6 +99,7 @@ public class Funcion {
             }
             if (!sindetalle){
                 salida.add("<a href=\"detalle.jsp?artId="+rs.getInt("codigo")+"\">Ver Detalle</a>");
+                System.out.println("<a href=\"detalle.jsp?artId="+rs.getInt("codigo")+"\">Ver Detalle</a>");
             }  
             salidaf.add(salida);
         }
@@ -219,12 +217,7 @@ public class Funcion {
         ResultSet result = null;
         PreparedStatement statement = null;
         try {            
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+            conn = ConectarBD.getConnection();
             statement = conn.prepareStatement("SELECT * FROM vendedor WHERE rut = '"+Usuario+"' and contraseña = '"+Clave+"'");
             result = statement.executeQuery();
             if(result.next()){
@@ -257,12 +250,8 @@ public class Funcion {
     }
     
     public static String conectaUsuario(String rut, String ip) throws Exception{
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
+        
         String query3="select * from conectado where vendedor_rut=?"; 
         PreparedStatement st3 = conn.prepareStatement(query3);
         ResultSet rs3;        
@@ -302,12 +291,7 @@ public class Funcion {
     }    
     public static String userByIp(String ip) throws ClassNotFoundException,
                                                     SQLException {
-        String driverName = "oracle.jdbc.OracleDriver";
-        Class.forName(driverName);
-        String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-        String usuario= "fbaeza";
-        String password = "fbaeza";
-        Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+        Connection conn = ConectarBD.getConnection();
         String query3="select * from conectado where ip=?"; 
         PreparedStatement st3 = conn.prepareStatement(query3);
         ResultSet rs3;        
@@ -326,12 +310,7 @@ public class Funcion {
     }
     public static String desconectaUsuario(String rut){
         try{
-            String driverName = "oracle.jdbc.OracleDriver";
-            Class.forName(driverName);
-            String cadenaConexion= "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String usuario= "fbaeza";
-            String password = "fbaeza";
-            Connection conn = DriverManager.getConnection(cadenaConexion, usuario, password);   
+            Connection conn = ConectarBD.getConnection();
             
             String query="DELETE FROM conectado WHERE vendedor_rut= ?"; 
             PreparedStatement st = conn.prepareStatement(query);
@@ -432,6 +411,26 @@ public class Funcion {
         return new java.sql.Timestamp(today.getTime());
      
     }
+    public static String calificacionToString(int cali){
+        if(cali==0){
+            return("Sin Calificar");
+        }else if(cali<1){
+            return("Muy Malo");
+        }else if(cali<2){
+            return("Malo");
+        }else if(cali<3){
+            return("Regular");
+        }else if(cali<4){
+            return("Bueno");
+        }else if(cali<5){
+            return("Muy Bueno");
+        }else if(cali==5){
+            return("Excelente");
+        }else{
+            return("Sin Calificar");
+        }
+    }
+                                                           
     public class ArticuloDetalle{
         List<String> imagenes;
         List<String> textos;
